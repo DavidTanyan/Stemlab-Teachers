@@ -1,0 +1,65 @@
+.stemlabicon{
+  width: 200px;
+  height: 100%;
+  margin: 0 30% ;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.rightblock{
+  width:  49%;
+  float:right;
+}
+.leftblock{
+  width: 49%;
+  float: left;
+}
+.blockmain{
+  width: 100%;
+  overflow: hidden;
+}
+
+.fototecher{
+width: 150px; /* Ширина */
+height: 150px; /* Высота */
+border-radius: 50%; /* Радиус для создания круга */
+object-fit: cover; /* Сохраняет пропорции фото */
+border: 3px solid #0b0f90; /* Опционально: рамка вокруг фото */
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Опционально: тень */
+margin: 0 50% ;
+}
+
+.marquee{
+  text-align:left;
+  width:100%;
+  overflow:hidden;
+  white-space: nowrap;
+}
+.marquee span { 
+  display:inline-block;
+  width:100%;
+  text-indent:0;
+  animation: marquee 20s linear infinite
+}
+.marquee span:hover{
+  animation-play-state: paused
+}
+@keyframes marquee {
+0%  { transform: translate(100%, 0); }
+100% { transform: translate(-100%, 0); }
+}
+@media only screen and (max-width: 440px) {
+.marquee span{
+  animation:none;
+  padding-left:0;
+}
+}
+
+footer a{
+  text-decoration: none;
+  
+}
+
